@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:black;
+      background-color: #e6f7ff; /* Light blue */
+    color: #333; /* Dark text for readability */
     
     margin: 0;
     padding: 0;
