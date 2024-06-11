@@ -61,7 +61,7 @@ section {
 
 #services {
     display: flex;
-    background-color:white;
+     
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -70,6 +70,7 @@ section {
     border: 1px solid #ccc;
     padding: 20px;
     text-color:white;
+    background-color:white;
     margin: 10px;
     width: 30%;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
