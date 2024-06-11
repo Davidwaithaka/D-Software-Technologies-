@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #3333;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -68,6 +68,7 @@ section {
 .service {
     border: 1px solid #ccc;
     padding: 20px;
+    text-color:white;
     margin: 10px;
     width: 30%;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
