@@ -25,7 +25,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-}
+} 
 
 section {
     padding: 20px;
@@ -54,6 +54,28 @@ section {
     height: auto;
     max-height: 300px;
     object-fit: cover;
+}
+section {
+    padding: 20px;
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
 }
 
 form {
