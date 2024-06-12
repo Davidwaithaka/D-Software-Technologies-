@@ -62,7 +62,7 @@ nav ul li a {
     white-space: nowrap;
     box-sizing: border-box;
     width: 100%;
-    background: dark-grey; /* Darker background for a modern look */
+    background: grey; /* Darker background for a modern look */
     color: white;
     padding: 10px;
     position: relative; /* Needed for the fading effect */
