@@ -55,7 +55,7 @@ nav ul li a {
     100% { transform: translateX(-100%); }
 }
 
-@keyframes rotate {
+@keyframes rotateClockwise {
     from {
         transform: rotate(0deg);
     }
@@ -64,16 +64,17 @@ nav ul li a {
     }
 }
 
-.rotating-image {
-    animation: rotate 10s linear infinite;
-    display: block;
+.rotating-service-container {
+    animation: rotateClockwise 10s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px auto;
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
+    width: 50%;
+    height: 300px; /* Adjust as needed */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
-
 
 #rotating-service {
     text-align: center;
@@ -152,8 +153,7 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+    padding: 10px;     
+    
     width: 100%;
 }
