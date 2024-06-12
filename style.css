@@ -55,14 +55,14 @@ nav ul li a {
 }
 
 .social-icons i {
-    display: inline-block;
+    display: flex;
 }
 .marquee-container {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
     width: 100%;
-    background: #333; /* Darker background for a modern look */
+    background: dark-grey; /* Darker background for a modern look */
     color: white;
     padding: 10px;
     position: relative; /* Needed for the fading effect */
