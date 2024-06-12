@@ -39,7 +39,7 @@ nav ul li a {
     white-space: nowrap;
     box-sizing: border-box;
     width: 100%; /* Adjust as needed */
-    background: #333; /* Background color */
+    background:grey;
     color: white;
     padding: 10px;
 }
