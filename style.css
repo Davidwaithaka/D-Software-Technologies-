@@ -29,7 +29,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
 } 
-.nav-bar-social-icons {
+.social-icons {
     display:flex;
     gap:30px;
     justify-content: right;
