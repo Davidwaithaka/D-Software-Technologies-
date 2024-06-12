@@ -29,30 +29,83 @@ nav ul li a {
     color: white;
     text-decoration: none;
 } 
+
 .social-icons {
-    display:flex;
-    gap:30px;
-    justify-content: right;
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Position to the right */
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    color: #ffffff; /* White color for the icons */
+    background-color: #333; /* Dark background color for contrast */
+    margin: 5px 0; /* Spacing between icons */
+    padding: 10px; /* Padding around the icons */
+    border-radius: 50%; /* Make icons circular */
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    font-size: 20px; /* Adjust icon size */
+}
+
+.social-icons a:hover {
+    background-color: #555; /* Slightly lighter on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.social-icons i {
+    display: inline-block;
 }
 .marquee-container {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    width: 100%; /* Adjust as needed */
-    background:grey;
+    width: 100%;
+    background: #333; /* Darker background for a modern look */
     color: white;
     padding: 10px;
+    position: relative; /* Needed for the fading effect */
 }
 
+/* Marquee text styling */
 .marquee {
     display: inline-block;
     padding-left: 100%; /* Push the text outside the container */
     animation: marquee 20s linear infinite;
 }
 
+/* Marquee animation */
 @keyframes marquee {
-    0% { transform: translateX(0); }
+    0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
+}
+
+/* Fade effect at the edges */
+.marquee-container::before,
+.marquee-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px; /* Adjust as needed */
+    height: 100%;
+    z-index: 1;
+}
+
+.marquee-container::before {
+    left: 0;
+    background: linear-gradient(to right, #333, rgba(51, 51, 51, 0));
+}
+
+.marquee-container::after {
+    right: 0;
+    background: linear-gradient(to left, #333, rgba(51, 51, 51, 0));
+}
+
+/* Optional: Add a border or shadow for a more modern look */
+.marquee-container {
+    border: 1px solid #555; /* Optional border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
 
 @keyframes rotateClockwise {
