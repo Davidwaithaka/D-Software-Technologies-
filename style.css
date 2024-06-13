@@ -139,8 +139,8 @@ nav ul li a {
 
 /* Service Image Styles */
 .rotating-image-container img {
-    max-width: 100%;
-    height: auto;
+    max-width: 200px;
+    height: 200px;
     border-radius: 8px;
     margin-bottom: 1em;
     animation: rotate 8s linear infinite;
