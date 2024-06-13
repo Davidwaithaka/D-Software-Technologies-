@@ -33,7 +33,7 @@ nav ul li a {
 .social-icons {
     position: fixed;
     top: 20px; /* Adjust as needed */
-    right: 20px; /* Position to the right */
+    right: 10px; /* Position to the right */
     display: flex;
     flex-direction: column;
 }
