@@ -3,7 +3,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     alert('Thank you for contacting us!');
 });
 
-const services = [
+const rotating-image = [
     {
         title: "Website Creation",
         description: "We create stunning and responsive websites.",
