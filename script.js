@@ -16,7 +16,7 @@ const rotatingImages = [
     },
     {
         title: "Software Development",
-        description: "Custom software solutions tailored to your business.",
+        description: "Custom software solutions for your business.",
         image: "software.jpeg"
     },
     {
