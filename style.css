@@ -32,8 +32,8 @@ nav ul li a {
 
 .social-icons {
     position: fixed;
-    top: 50px; /* Adjust as needed */
-    right: 5px; /* Position to the right */
+    top: 50%; /* Adjust as needed */
+    right: 1px; /* Position to the right */
     display: flex;
     flex-direction: column;
 }
@@ -141,6 +141,7 @@ nav ul li a {
 .rotating-image-container img {
     max-width: 200px;
     height: 200px;
+    justify-cotent:centre;
     border-radius: 8px;
     margin-bottom: 1em;
     animation: rotate 8s linear infinite;
