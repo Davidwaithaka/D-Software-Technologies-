@@ -40,7 +40,7 @@ nav ul li a {
 
 .social-icons a {
     color: #ffffff; /* White color for the icons */
-    background-color: #333; /* Dark background color for contrast */
+    background-color: white; /* Dark background color for contrast */
     margin: 5px 0; /* Spacing between icons */
     padding: 10px; /* Padding around the icons */
     border-radius: 50%; /* Make icons circular */
@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 .social-icons a:hover {
-    background-color: #555; /* Slightly lighter on hover */
+    background-color: blue; /* Slightly lighter on hover */
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
@@ -144,7 +144,10 @@ nav ul li a {
 .rotating-image-container img {
     max-width: 200px;
     height: 200px;
-    position:centre;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
     margin-bottom: 1em;
     animation: rotate 8s linear infinite;
@@ -264,7 +267,7 @@ section {
     }
 }
 .service .image:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 form {
