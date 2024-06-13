@@ -31,7 +31,7 @@ const rotating-image = [
     }
 ];
 
-let currentServiceIndex = 0;
+let currentrotating-imageIndex = 0;
 
 function rotateServices() {
     const serviceContainer = document.getElementById('rotating-service');
