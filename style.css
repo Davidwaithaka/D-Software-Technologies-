@@ -144,7 +144,7 @@ nav ul li a {
 .rotating-image-container img {
     max-width: 200px;
     height: 200px;
-    position: fixed;
+   justify-content: center;
     display: flex;     
     align-items: center;
     border-radius: 8px;
