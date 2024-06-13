@@ -3,7 +3,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     alert('Thank you for contacting us!');
 });
 
-const rotating-image = [
+const rotatingImages = [
     {
         title: "Website Creation",
         description: "We create stunning and responsive websites.",
@@ -31,11 +31,11 @@ const rotating-image = [
     }
 ];
 
-let currentrotating-imageIndex = 0;
+let currentRotatingImageIndex = 0;
 
 function rotateServices() {
-    const serviceContainer = document.getElementById('rotating-service');
-    const service = services[currentServiceIndex];
+    const serviceContainer = document.getElementById('rotating-image');
+    const service = rotatingImages[currentRotatingImageIndex];
     serviceContainer.innerHTML = `
         <div class="service">
             <h3>${service.title}</h3>
@@ -43,7 +43,7 @@ function rotateServices() {
             <p>${service.description}</p>
         </div>
     `;
-    currentServiceIndex = (currentServiceIndex + 1) % services.length;
+    currentRotatingImageIndex = (currentRotatingImageIndex + 1) % rotatingImages.length;
 }
 
 setInterval(rotateServices, 3000); // Change service every 3 seconds
