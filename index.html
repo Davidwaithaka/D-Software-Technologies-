@@ -100,17 +100,40 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    
+    <button type="submit">Submit</button>
+</form>
+
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("e1UMcON0EB8g_kNaW"); // Replace with your EmailJS user ID
+    })();
+</script>
+
+<script type="text/javascript">
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        emailjs.sendForm('service_t0vnxiv', 'cOR1lFLWEraX6x1L3MFtJ', this)
+            .then(function() {
+                alert('Thank you for contacting us!');
+            }, function(error) {
+                console.log('FAILED...', error);
+                alert('An error occurred. Please try again.');
+            });
+    });
+</script>
+
     </section><br><br>
 
     <footer>
