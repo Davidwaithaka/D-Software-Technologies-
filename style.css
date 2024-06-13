@@ -40,7 +40,7 @@ nav ul li a {
 
 .social-icons a {
     color: #ffffff; /* White color for the icons */
-    background-color: white; /* Dark background color for contrast */
+    background-color: black; /* Dark background color for contrast */
     margin: 5px 0; /* Spacing between icons */
     padding: 10px; /* Padding around the icons */
     border-radius: 50%; /* Make icons circular */
