@@ -128,6 +128,7 @@
         emailjs.sendForm('service_t0vnxiv', 'template_owo79wr', this)
             .then(function() {
                 alert('Thank you for contacting us!');
+                document.getElementById('contact-form').reset();
             }, function(error) {
                 console.log('FAILED...', error);
                 alert('An error occurred. Please try again.');
