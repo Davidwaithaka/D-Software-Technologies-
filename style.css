@@ -97,7 +97,7 @@ nav ul li a {
 
 /* Rotating Image Container Styles */
 .rotating-image-container {
-    max-width: 700px;
+    max-width: 400px;
     height: 400px;
     margin: 2em auto;
     padding: 1em;
@@ -107,6 +107,9 @@ nav ul li a {
     text-align: center;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Service Styles */
@@ -141,7 +144,6 @@ nav ul li a {
 .rotating-image-container img {
     max-width: 200px;
     height: 200px;
-    justify-cotent:centre;
     border-radius: 8px;
     margin-bottom: 1em;
     animation: rotate 8s linear infinite;
@@ -163,6 +165,7 @@ nav ul li a {
         transform: rotate(-360deg);
     }
 }
+
 
 
 section {
