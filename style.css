@@ -145,8 +145,7 @@ nav ul li a {
     max-width: 200px;
     height: 200px;
     position: fixed;
-    display: flex;
-    justify-content: center;
+    display: flex;     
     align-items: center;
     border-radius: 8px;
     margin-bottom: 1em;
