@@ -37,6 +37,9 @@ nav ul li a {
     display: flex;
     flex-direction: column;
 }
+.insta{
+    background-color:(0, 97, 96, 0);
+}
 
 .social-icons a {
     color: #ffffff; /* White color for the icons */
