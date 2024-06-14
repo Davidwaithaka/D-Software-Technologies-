@@ -99,19 +99,21 @@
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-    
-    <button type="submit">Submit</button>
-</form>
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="from_name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="from_email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
 
 <!-- EmailJS SDK -->
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -124,6 +126,12 @@
 <script type="text/javascript">
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
+
+        // Optional: Verify if fields are correctly picked up
+        const form = this;
+        console.log('Name:', form.from_name.value);
+        console.log('Email:', form.from_email.value);
+        console.log('Message:', form.message.value);
         
         emailjs.sendForm('service_t0vnxiv', 'template_owo79wr', this)
             .then(function() {
@@ -135,6 +143,7 @@
             });
     });
 </script>
+
 
     </section><br><br>
 
