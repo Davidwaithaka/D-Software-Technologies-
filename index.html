@@ -98,7 +98,7 @@
         <p>D Software Technologies (D.S.T.) is dedicated to providing top-notch software solutions and support.</p>
     </section>
 
-    <section id="contact">
+   <section id="contact">
     <h2>Contact Us</h2>
     <form id="contact-form">
         <label for="name">Name:</label>
@@ -119,6 +119,7 @@
 
 
 
+
 <!-- EmailJS SDK -->
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript">
@@ -131,14 +132,16 @@
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
 
-        // Optional: Verify if fields are correctly picked up
-        const form = this;
-        console.log('Name:', form.from_name.value);
-        console.log('Email:', form.from_email.value);
-        console.log('Phone:', form.phone_number.value);
-        console.log('Message:', form.message.value);
-        
-        emailjs.sendForm('service_b7euldc', 'template_owo79wr', this)
+        // Create the email parameters
+        const emailParams = {
+            from_name: this.from_name.value,
+            from_email: this.from_email.value,
+            phone_number: this.phone_number.value,
+            message: this.message.value,
+            reply_to: this.from_email.value // Set the reply-to email
+        };
+
+        emailjs.send('service_t0vnxiv', 'template_owo79wr', emailParams)
             .then(function() {
                 alert('Thank you for contacting us!');
                 document.getElementById('contact-form').reset();
@@ -148,6 +151,7 @@
             });
     });
 </script>
+
 
 
 
